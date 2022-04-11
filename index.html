@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="http://fonts.cdnfonts.com/css/chava" rel="stylesheet">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/chava');
+     </style>
+
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <h1>ETCH-A-SKETCH</h1>
+    <div id="container">
+        <div class="options">
+            <div class="slideContainer">
+                <p >Grid Size: <span id="demo"></span></p>
+                <input type="range" min="5" max="100" value="16" class="slider" id="myRange">
+            </div>
+            <button class="setGrid"> Set Grid</button>
+            <p>Pick a pen color<p>
+            <input type="color" id="colorPicker" value="#000000">
+            <button class="pen"> pen</button>
+            <button class="eraser">Eraser</button>
+            <button class="reset">Reset</button>
+        </div>
+        <div id="grid"></div>
+        <div></div>
+    </div>  
+    <footer>Created by Devin Peters</footer>
+</body>
+<script src="app.js"></script>
+</html>
